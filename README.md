@@ -17,6 +17,7 @@ Kampus DRP addresses this challenge by providing a centralized platform to asses
 
 ## Key Features
 
+<img width="1138" height="627" alt="Screenshot 2026-10-14 185416" src="https://github.com/user-attachments/assets/f0269f17-432c-4a16-adcd-6550d7c36c00" />
 
 
 - **Social Media Monitoring:** Identify potentially fake profiles and pages impersonating legitimate brands.
@@ -59,45 +60,11 @@ Kampus DRP addresses this challenge by providing a centralized platform to asses
 4. Review the risk classification and explanation.
 5. Follow the recommended investigation or mitigation steps.
 
+## Previous apps  and the existing Approaches 
+
+<img width="1138" height="582" alt="Screenshot 2026-10-14 185834" src="https://github.com/user-attachments/assets/83f21edd-c2e1-48fb-a814-82754dfbc9fd" />
+
 ## Getting Started
-
-### Prerequisites
-
-- Node.js and npm
-- Git
-- A Google Gemini API key if AI features are enabled
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/vasaviGangisetty/Kampus_DRP.git
-cd Kampus_DRP
-```
-
-Install the dependencies:
-
-```bash
-npm install --legacy-peer-deps
-```
-
-Create a `.env` file in the appropriate project root and configure the required environment variables:
-
-```env
-GEMINI_API_KEY=your_gemini_api_key_here
-PORT=3000
-```
-
-Replace the placeholder with your own API key. Do not commit the `.env` file to GitHub.
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Open the local URL printed in the terminal to access the application.
 
 ## Use Cases
 
@@ -106,6 +73,8 @@ Open the local URL printed in the terminal to access the application.
 - Identifying look-alike brand names and URLs.
 - Reviewing potentially suspicious mobile applications.
 - Supporting brand safety assessments for startup portfolios.
+
+ 
 
 ## Limitations
 
