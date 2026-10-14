@@ -1,0 +1,6 @@
+{
+  "name": "Kampus DRP - Digital Risk Protection Platform",
+  "description": "Enterprise Digital Risk Protection platform by Kampus.VC focused on Social & App Monitoring, look-alike name detection, threat takedown, and portfolio brand security.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

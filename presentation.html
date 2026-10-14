@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kampus DRP — Executive Presentation Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0B0F17; color: #F1F5F9; }
+    .slide { min-height: 520px; display: none; }
+    .slide.active { display: flex; }
+    @media print {
+      .no-print { display: none !important; }
+      .slide { display: flex !important; page-break-after: always; min-height: 90vh; }
+    }
+  </style>
+</head>
+<body class="p-4 sm:p-8 flex flex-col items-center justify-center min-h-screen">
+  <div class="max-w-4xl w-full">
+    <!-- Header Controls -->
+    <div class="no-print flex items-center justify-between mb-4 bg-slate-900 border border-slate-800 p-3 rounded-xl">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+        <span class="text-xs font-bold text-white uppercase tracking-wider">Kampus DRP Pitch Deck</span>
+        <span class="text-xs text-slate-400 ml-2" id="slide-indicator">Slide 1 of 8</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="px-3 py-1 text-xs bg-slate-800 hover:bg-slate-700 text-slate-300 rounded border border-slate-700 transition">
+          Print / Save as PDF
+        </button>
+        <button onclick="prevSlide()" class="px-3 py-1 text-xs bg-slate-800 hover:bg-slate-700 text-white rounded transition">← Prev</button>
+        <button onclick="nextSlide()" class="px-3 py-1 text-xs bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded transition">Next →</button>
+      </div>
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide active bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl relative">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 01 · Overview</span>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight leading-tight">Kampus.VC Digital Risk Protection Platform</h1>
+        <p class="text-base text-slate-400 mt-2 font-medium">Securing Applied AI Venture Studios & University Portfolios Against Social & App Store Impersonation</p>
+        <div class="mt-8 space-y-3 text-sm text-slate-300">
+          <p>• Purpose-built digital asset protection for venture studios and university AI spinouts.</p>
+          <p>• Real-time surveillance across X, LinkedIn, Telegram, Instagram, Apple App Store, Google Play, and rogue APK mirrors.</p>
+          <p>• Strict Whitelisting Engine guaranteeing zero false-positive alerts on legitimate brand assets.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-slate-500 font-mono">
+        <span>Kampus.VC Applied AI Venture Studio</span>
+        <span>Executive Briefing</span>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-rose-400 bg-rose-500/10 px-3 py-1 rounded-full border border-rose-500/20">Slide 02 · Threat Landscape</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">The Modern Brand Impersonation Crisis</h2>
+        <p class="text-base text-slate-400 mt-2">Cyber adversaries weaponize brand trust faster than ever before</p>
+        <div class="mt-8 space-y-4 text-sm text-slate-300">
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+            <strong class="text-white block">1. Fake Helpdesks & Support Accounts</strong>
+            <span class="text-slate-400">Threat actors register @kampus_support_desk to intercept applicants and steal credentials or wallet keys.</span>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+            <strong class="text-white block">2. Optical Homoglyphs & Typosquats</strong>
+            <span class="text-slate-400">Substituting visual twins like 'rn' for 'm' (@karnpus_vc) tricks 87% of users visually.</span>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg border border-slate-800">
+            <strong class="text-white block">3. Trojanized Mobile Apps</strong>
+            <span class="text-slate-400">Rogue developers publish unauthorized apps requesting dangerous SMS and Overlay permissions for 2FA bypass.</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Problem Definition</span>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 03 · Core Scope</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">Multi-Channel Surveillance Scope</h2>
+        <p class="text-base text-slate-400 mt-2">Complete external monitoring across social media and app ecosystems</p>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
+            <h3 class="font-bold text-emerald-400 text-base">Social Media Monitoring</h3>
+            <p class="text-slate-300 text-xs">• Brand impersonation accounts</p>
+            <p class="text-slate-300 text-xs">• Fake company pages & support traps</p>
+            <p class="text-slate-300 text-xs">• Crypto grant/token scams</p>
+            <p class="text-slate-300 text-xs">• Executive VIP spoofing</p>
+          </div>
+          <div class="p-4 bg-slate-950 rounded-xl border border-slate-800 space-y-2">
+            <h3 class="font-bold text-emerald-400 text-base">App Store Monitoring</h3>
+            <p class="text-slate-300 text-xs">• Google Play & Apple App Store audits</p>
+            <p class="text-slate-300 text-xs">• Publisher mismatch detection</p>
+            <p class="text-slate-300 text-xs">• Logo & description resemblance %</p>
+            <p class="text-slate-300 text-xs">• Intrusive permission alerting</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Functional Scope</span>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 04 · Bonus Feature</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">Look-alike & Typosquatting Detection</h2>
+        <p class="text-base text-slate-400 mt-2">Algorithmic mutation analysis with zero alert fatigue</p>
+        <div class="mt-6 space-y-2 text-xs font-mono">
+          <div class="p-3 bg-slate-950 rounded-lg flex justify-between items-center border border-slate-800">
+            <span class="text-white">1. Character Swaps (Transposition):</span>
+            <span class="text-emerald-400">kampus → kmapus</span>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg flex justify-between items-center border border-slate-800">
+            <span class="text-white">2. Optical Homoglyphs (Visual Twins):</span>
+            <span class="text-emerald-400">kampus → karnpus (rn for m)</span>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg flex justify-between items-center border border-slate-800">
+            <span class="text-white">3. Threat Affixes (Helpdesk Lures):</span>
+            <span class="text-emerald-400">kampus_support_desk</span>
+          </div>
+          <div class="p-3 bg-slate-950 rounded-lg flex justify-between items-center border border-slate-800">
+            <span class="text-white">4. False-Positive Suppression:</span>
+            <span class="text-emerald-400">Normal words (campus bookstore) suppressed</span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Algorithmic Innovation</span>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 05 · Whitelist Engine</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">Zero False-Positive Whitelisting</h2>
+        <p class="text-base text-slate-400 mt-2">Guaranteed exclusion of legitimate company assets</p>
+        <div class="mt-8 space-y-3 text-sm text-slate-300">
+          <p>• <strong>Brand Profile as Single Source of Truth</strong>: Stores verified domains, official handles, registered app bundle IDs, and publisher entity.</p>
+          <p>• <strong>Pre-Scoring Exclusion Filter</strong>: Any incoming candidate matching an official credential is automatically marked OWNED and bypassed.</p>
+          <p>• <strong>Zero Alert Noise</strong>: Analysts only review genuine malicious external impersonators, never internal company accounts.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Whitelisting Rigor</span>
+      </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 06 · Remediation</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">AI Threat Triage & One-Click Takedowns</h2>
+        <p class="text-base text-slate-400 mt-2">From threat discovery to legal takedown notice in seconds</p>
+        <div class="mt-8 space-y-3 text-sm text-slate-300">
+          <p>• <strong>Gemini AI Intelligence</strong>: Evaluates malicious intent, scam mechanism, and recommended countermeasures.</p>
+          <p>• <strong>Automated Legal Notices</strong>: Generates formal, legally binding DMCA and Trademark Cease-and-Desist notices formatted for X, Meta, Apple Legal, and Google Play Abuse.</p>
+          <p>• <strong>Cryptographic Evidence Vault</strong>: SHA-256 evidence hashing under penalty of perjury to support formal enforcement.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Remediation Engine</span>
+      </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 07 · Venture Studio Value</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">Venture Studio Ecosystem Synergies</h2>
+        <p class="text-base text-slate-400 mt-2">De-risking university AI startups from Day Zero</p>
+        <div class="mt-8 space-y-3 text-sm text-slate-300">
+          <p>• <strong>Founder Pitch Portal</strong>: University founders submitting pitch decks automatically receive an instant Brand Safety & DRP Audit score.</p>
+          <p>• <strong>Investor Portfolio Dashboard</strong>: Partners track brand safety letter grades (A+ to F), active threats, and 96.4% takedown success rate across co-builds.</p>
+          <p>• <strong>1-Click CSV Diligence Export</strong>: Instant diligence reports for LP and partner review.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Kampus.VC Impact</span>
+      </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide bg-slate-900 border border-slate-800 rounded-2xl p-8 sm:p-12 flex-col justify-between shadow-2xl">
+      <div>
+        <span class="text-xs font-mono uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">Slide 08 · Production Ready</span>
+        <h2 class="text-3xl font-extrabold text-white mt-4 tracking-tight">Production-Ready & Vercel / GitHub CI/CD</h2>
+        <p class="text-base text-slate-400 mt-2">Full-stack TypeScript architecture built for scale</p>
+        <div class="mt-8 space-y-3 text-sm text-slate-300">
+          <p>• <strong>Tech Stack</strong>: React 19, TypeScript, Tailwind CSS, Express, and @google/genai SDK.</p>
+          <p>• <strong>Vercel 1-Click Deployment</strong>: Configured via <code>vercel.json</code> for instant zero-config hosting.</p>
+          <p>• <strong>Automated CI/CD</strong>: <code>.github/workflows/deploy.yml</code> runs automated linting, builds, and Vercel deployments on every push.</p>
+        </div>
+      </div>
+      <div class="mt-8 pt-4 border-t border-slate-800 text-xs text-slate-500 font-mono">
+        <span>Ready for Deployment</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+    const indicator = document.getElementById('slide-indicator');
+
+    function update() {
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === current);
+      });
+      indicator.textContent = `Slide ${current + 1} of ${slides.length}`;
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      update();
+    }
+
+    function prevSlide() {
+      current = (current - 1 + slides.length) % slides.length;
+      update();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+  </script>
+</body>
+</html>
